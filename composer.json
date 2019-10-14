@@ -1,0 +1,24 @@
+{
+    "name": "appeal/vsf-stripe",
+    "description": "The Stripe payment module for magento2.",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "email": "ben@appeal.marketing",
+            "name": "Ben Kelly"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "stripe/stripe-php": "^6"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Appeal\\VsfStripe\\": ""
+        }
+    }
+} 

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<vsfstripe>
+				<active>1</active>
+				<model>Appeal\VsfStripe\Model\PaymentMethod</model>
+				<payment_action>authorize_capture</payment_action>
+				<order_status>pending</order_status>
+				<title>VsfStripe</title>
+				<allowspecific>0</allowspecific>
+				<can_refund_partial_per_invoice>1</can_refund_partial_per_invoice>
+				<can_refund>1</can_refund>
+			</vsfstripe>
+		</payment>
+	</default>
+</config>
